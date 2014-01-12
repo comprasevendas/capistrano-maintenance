@@ -1,13 +1,13 @@
 # encoding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "capistrano"
-require "capistrano/maintenance/version"
+#require "capistrano"
+#require "capistrano/maintenance/version"
 
 Gem::Specification.new do |s|
   s.name        = 'capistrano-maintenance'
-  s.version     = Capistrano::Maintenance::VERSION
-  s.platform    = Gem::Platform::RUBY
+  s.version     = '0.0.5'
+  #s.platform    = Gem::Platform::RUBY
   s.license     = 'MIT'
   s.author      = 'Thomas von Deyen'
   s.email       = 'tvd@magiclabs.de'
