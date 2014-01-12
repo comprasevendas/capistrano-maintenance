@@ -1,6 +1,7 @@
 # encoding: utf-8
-$:.push File.expand_path("../lib", __FILE__)
-require "capistrano"
+lib = File.expand_path('../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+#require "capistrano"
 require "capistrano/maintenance/version"
 
 Gem::Specification.new do |s|
@@ -17,5 +18,6 @@ Gem::Specification.new do |s|
   s.files         = `git ls-files`.split("\n")
   s.require_paths = ["lib"]
 
-  s.add_dependency 'capistrano', ['>= 2.0.0']
+  s.add_dependency 'capistrano', '~> 3.1'
+  s.add_dependency 'capistrano-rails', '~> 1.1.1'
 end
