@@ -19,5 +19,5 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   s.add_dependency 'capistrano', '~> 3.1'
-  s.add_dependency 'capistrano-rails', '~> 1.1.1'
+  s.add_dependency 'capistrano-rails', '~> 1.1.0'
 end
